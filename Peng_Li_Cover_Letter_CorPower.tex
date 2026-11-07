@@ -5,8 +5,11 @@
 \usepackage{lmodern}
 \usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
-\input{glyphtounicode}
-\pdfgentounicode=1
+% These Unicode-mapping commands are specific to pdfTeX.
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 \hypersetup{pdftitle={Peng Li -- Application -- CorPower Ocean -- Hydrodynamics Analysis Engineer},pdfauthor={Peng Li}}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}

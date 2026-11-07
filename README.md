@@ -18,3 +18,11 @@ pdflatex -interaction=nonstopmode -halt-on-error Peng_Li_Cover_Letter_Blykalla.t
 ```
 
 [Previous CorPower application](https://github.com/PengLi2810/CoverLetter/blob/main/Peng_Li_Cover_Letter_CorPower.pdf)
+
+## Compiling on Overleaf
+
+Pull the latest changes from GitHub. In Settings > Compiler, choose **pdfLaTeX** and set **Main document** to `Peng_Li_Cover_Letter_Blykalla.tex` (or `Peng_Li_Cover_Letter_CorPower.tex` for CorPower). Then select **Recompile from scratch** from the Recompile menu.
+
+The sources also compile with XeLaTeX and LuaLaTeX. Unicode-mapping commands specific to pdfTeX are enabled only when supported by the compiler.
+
+If compilation still fails, select **Stop on first error** in the Recompile menu and inspect the first actual LaTeX error in the raw log; the general “didn’t produce a PDF” message does not identify the cause.
